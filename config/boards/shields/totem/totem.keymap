@@ -38,6 +38,16 @@
             };
     };
 
+behaviours {
+        to_layer_tap_kp: to_layer_tap_kp {
+            compatible = "zmk,behaviour-hold-tap";
+            #binding-cells = <2>;
+            flavour = "hold-preferred";
+            tapping-term-ms =<300>;
+            bindings = <&to>, <&kp;>
+            };
+    };       
+        }
     macros {
         gif: gif {
             label = "giphy";
@@ -56,7 +66,7 @@
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                home_layer {
+                layer_0 {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "HOME"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -73,7 +83,7 @@ label= "HOME"                              ;
 // ╷           ╷             ╷             ╷               ╷                 ╷           ╷     ╷             ╷               ╷             ╷             ╷           ╷
 
                 &kp W          &kp L         &kp R          &kp B             &kp J             &kp Z         &kp Q           &kp U         &kp D        &kp X
-                &lt 2 S        &lt 0 H       &lt 1 N        &lt 3 T           &kp SEMI          &kp APOS      &kp A           &kp E         &kp O        &kp I  
+                &to_layer_tap_kp 2 S    &to_layer_tap_kp 0 H    &to_layer_tap_kp 1 N    &to_layer_tap_kp 3 T           &kp SEMI          &kp APOS      &kp A           &kp E         &kp O        &kp I  
                 &kp F          &kp M         &kp  V         &kp C             &kp COMMA         &kp DOT       &kp P           &kp G         &kp K        &kp Y
                 &sys_reset     &mt LALT RET  &mt LCTRL TAB  &mt RSHFT SPACE   &mt RGUI BSPC     &mt RGUI BSP  &mt RSHFT SPACE &mt LCTRL TAB &mt RALT RET &sys_reset 
                         >;
@@ -82,7 +92,7 @@ label= "HOME"                              ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                number_layer {
+                layer_1 {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "NUMBER"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -99,7 +109,7 @@ label= "NUMBER"                              ;
 // ╷           ╷             ╷            ╷              ╷                    ╷      ╷  ╷          ╷          ╷          ╷           ╷           ╷
 
                 &kp N7        &kp N8       &kp N9         &kp N0               &trans   &trans    &kp LBKT   &kp RBKT   &kp BSLH   &kp FLSH 
-                &lt 2 N4      &lt 0 N5     &lt 1 N6       &lt 3 GRAVE          &trans   &trans    &kp LEFT   &kp UP     &kp DN     &kp RIGHT  
+        &to_layer_tap_kp 2 N4 &to_layer_tap_kp 0 N5 &to_layer_tap_kp1 N6   &to_layer_tap_kp 3 GRAVE          &trans   &trans    &kp LEFT   &kp UP     &kp DN     &kp RIGHT  
                 &kp N1        &kp N2       &kp N3         &trans               &trans   &trans    &kp EQUAL  &kp MINUS  &gif       &kp ESC            
                 &trans        &trans       &trans         &trans               &trans   &trans    &trans     &trans     &trans     &trans 
                         >;
@@ -108,7 +118,7 @@ label= "NUMBER"                              ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                system_layer {
+                layer_2 {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "SYSTEM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -125,7 +135,7 @@ label= "SYSTEM"                               ;
 // ╷           ╷              ╷             ╷              ╷                   ╷        ╷   ╷           ╷              ╷             ╷             ╷           ╷           ╷
 
                 &kp PG UP       &kp PG DN    &trans         &trans               &trans      &trans      &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &trans      
-                &lt 2 F1        &lt 0 F2     &lt 1 F3       &lt 3 F4             &kp F5      &kp F6      &kp F7         &kp F8        &kp F9        &kp F10
+        &to_layer_tap_kp 2 F1   &to_layer_tap_kp 0 F2   &to_layer_tap_kp 1 F3  &to_layer_tap_kp 3 F4             &kp F5      &kp F6      &kp F7         &kp F8        &kp F9        &kp F10
                 &kp C_BRI_UP    &kp C_BRI_DN &trans         &trans               &trans      &trans      &trans         &trans        &trans        &kp ESC            
                 &trans          &trans       &trans         &trans               &trans      &trans      &trans         &trans        &trans        &trans 
                         >;
@@ -134,7 +144,7 @@ label= "SYSTEM"                               ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                bluetooth_layer {
+                layer_3 {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "BLUETOOTH"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -151,7 +161,7 @@ label= "BLUETOOTH"                               ;
 // ╷           ╷               ╷            ╷               ╷                   ╷        ╷   ╷            ╷            ╷            ╷            ╷           ╷           ╷
 
                 &trans          &trans       &trans          &trans              &trans       &trans       &trans       &trans       &trans       &trans
-                &lt 2 F11       &lt 0 F12    &lt 1 F13       &lt 3 F14           &kp F15      &kp F16      &kp F17      &kp F18      &kp F19      &kp F20
+         &to_layer_tap_kp2 F11  &to_layer_tap_kp 0 F12  &to_layer_tap_kp 1 F13   &to_layer_tap_kp 3 F14           &kp F15      &kp F16      &kp F17      &kp F18      &kp F19      &kp F20
                 &bt BT_CLR      &bt BT_NXT   &bt BT_PRV      &out OUT_TOG        &trans       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           
                 &trans          &trans       &trans          &trans              &trans       &trans       &trans       &trans       &trans       &trans 
                         >;
