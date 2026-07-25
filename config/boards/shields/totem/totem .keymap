@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
 #define HOME 0
 #define NUMBER 1
 #define SYSTEM 2
@@ -17,119 +16,117 @@
 
 / {
     combos {
-            compatible = "zmk,combos";
-            left_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-                       };
+        compatible = "zmk,combos";
 
-            compatible = "zmk,combos";
-            left_sys-reset {
-                timeout-ms = <50>;
-                key-positions = <0 10>;
-                bindings = <&sys-reset>;
-                            };
+        left_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
 
-            compatible = "zmk,combos";
-            left_bootloader {
-                timeout-ms = <50>;
-                key-positions = <4 14>;
-                bindings = <&bootloader>;
-                            };
+        left_sys_reset {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&sys_reset>;
+        };
 
-            compatible = "zmk,combos";
-            right_bootloader {
-                timeout-ms = <50>;
-                key-positions = <15 25>;
-                bindings = <&bootloader>;
-                            };
+        left_bootloader {
+            timeout-ms = <50>;
+            key-positions = <4 14>;
+            bindings = <&bootloader>;
+        };
 
-            compatible = "zmk,combos";
-            right_sys-reset {
-                timeout-ms = <50>;
-                key-positions = <19 29>;
-                bindings = <&sys-reset>;
-                            };
+        right_bootloader {
+            timeout-ms = <50>;
+            key-positions = <5 15>;
+            bindings = <&bootloader>;
+        };
 
-            compatible = "zmk,combos";
-            right_esc {
-                timeout-ms = <50>;
-                key-positions = <18 19>;
-                bindings = <&kp ESC>;
-                       };
+        right_sys_reset {
+            timeout-ms = <50>;
+            key-positions = <9 19>;
+            bindings = <&sys_reset>;
+        };
 
-            };
+        right_esc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp ESC>;
+        };
+    };
 
-behaviours {
+    behaviors {
         t_l_t_kp: toggle_layer_tap_keypress {
-            compatible = "zmk,behaviour-hold-tap";
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavour = "hold-preferred";
-            tapping-term-ms =<300>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
             bindings = <&to>, <&kp>;
-                                   };
+        };
          
-          c_h_t: custom_hold_tap {
-            compatible = "zmk,behaviour-hold-tap";
-             #binding-cells = <2>;
-            flavour = "balanced";
+        c_h_t: custom_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
             tapping-term-ms = <170>;
             quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
-                                  };
-          one_pipe; one_pipe {
-            compatible = "zmk, behaviour-mod-morph";
-            #binding-cells = <0>;
-            bindings= <&kp N1>,<&kp PIPE>;
-            keep-mods = <0>;
-            mods = <(MOD_LSFT)>;
-                              };
-        bk_xcl;backslash_shriek {
-            compatible = "zmk, behaviour-mod-morph";
-            #binding-cells = <0>;
-            bindings= <&kp BACKSLASH>,<&kp EXCLAMATION>;
-            keep-mods = <0>;
-            mods = <(MOD_LSFT)>;
-                              };
-            };
-    macros {
-       ext_gif: dot_gif {            
-            compatible = "zmk,behaviour-macro";
-            #binding-cells = <0>;
-            wait_ms = <20>;
-            tap_ms = <20>;
-            bindings=<&kp DOT &kp G &kp I &kp F>;
-                 };
+        };
 
-     gm_dot: gmail_with_a_dot {
-            compatible ="zmk, behaviour-macro";
+        one_pipe: one_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp PIPE>;
+            keep-mods = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bk_xcl: backslash_shriek {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH>, <&kp EXCLAMATION>;
+            keep-mods = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    macros {
+        ext_gif: dot_gif {            
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings= <
+            bindings = <&kp DOT &kp G &kp I &kp F>;
+        };
+
+        gm_dot: gmail_with_a_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <
                 &kp D &kp A &kp V &kp I &kp D &kp DOT &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
                 &kp AT
                 &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-                     };
+        };
 
-       em_bt: bt_email {
-            compatible ="zmk, behaviour-macro";
+        em_bt: bt_email {
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings= <
-                &kp D &kp A &kp V &kp I &kp D &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
+            bindings = <
+                &kp D &kp A &kp V &kp I &kp L &kp LEDGER &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
                 &kp AT
                 &kp B &kp T &kp I &kp N &kp T &kp E &kp R &kp N &kp E &kp T &kp DOT &kp C &kp O &kp M>;
-                      };
+        };
 
-       pw_lh: password_lh {
-             compatible ="zmk, behaviour-macro";
-             #binding-cells = <0>;
-             wait-ms = <20>;
-             tap-ms = <20>;
-             bindings= 
+        pw_lh: password_lh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = 
                 <&macro_press &kp LSHFT>,
                 <&macro_tap &kp L>,
                 <&macro_release &kp LSHFT>,
@@ -143,78 +140,49 @@ behaviours {
                 <&macro_tap &kp H>,
                 <&macro_release &kp LSHFT>,
                 <&macro_tap &kp A &kp R &kp R &kp Y>;
-                       }; 
-              };
+        }; 
+    };
 
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-
-                layer_0 {
-diplay-name= "HOME"  ;
-
- bindings = <
-
-              
-              &kp W            &kp L              &kp R               &kp B                   &kp J                                 &kp Z             &kp Q               &kp U             &kp D            &kp X 
-            
-              &t_l_t_kp 2 S    &t_l_t_kp 0 H      &t_l_t_kp 1 N       &t_l_t_kp 3 T           &kp SEMI                              &kp APOS          &kp A               &kp E             &kp O            &kp I 
-           
-              &kp F            &kp M              &kp  V              &kp C                   &kp COMMA                             &kp DOT           &kp P               &kp G             &kp K            &kp Y 
-            
-              &kp RALT           &c_h_t LALT RET    &c_h_t LCTRL TAB    &c_h_t LSFT SPACE      &c_h_t LGUI BSPC                      &c_h_t LGUI BSP   &c_h_t LSFT SPACE  &c_h_t LCTRL TAB  &c_h_t LALT RET  &kp RALT
-                        >;
-                };
-
-
-                layer_1 {
-display-name= "NUMBER" ;
-
- bindings = <
-
-              &kp N7          &kp N8              &kp N9              &kp N0                  &trans                               &trans            &kp LBKT            &kp RBKT           &bk_xcl         &kp FLSH
-
-              &t_l_t_kp 2 N4  &t_l_t_kp 0 N5      &t_l_t_kp1 N6       &t_l_t_kp 3 GRAVE       &trans                               &trans            &kp LEFT            &kp UP             &kp DN           &kp RIGHT 
- 
-              &one_pipe       &kp N2              &kp N3              &trans                  &trans                               &trans            &kp EQUAL           &kp MINUS          &pw_lh           &trans 
-         
-              &kp RALT        &c_h_t LALT RET     &c_h_t LCTRL TAB    &c_h_t LSFT SPACE       &c_h_t LGUI BSPC                     &c_h_t LGUI BSP   &c_h_t LHFT SPACE   &c_h_t LCTRL TAB   &c_h_t LALT RET  &kp RALT
-                        >;  
-                };
-
-
-                layer_2 {
-
-display-name= "SYSTEM" ;
-                         
- bindings = <
-
-              &kp PG UP       &kp PG DN          &trans               &trans                 &trans                               &trans             &kp C_MUTE          &kp C_VOL_DN       &kp C_VOL_UP      &trans   
-
-              &t_l_t_kp 2 F1  &t_l_t_kp 0 F2     &t_l_t_kp 1 F3       &t_l_t_kp 3 F4         &kp F5                               &kp F6             &kp F7              &kp F8             &kp F9            &kp F10
-
-              &kp C_BRI_UP    &kp C_BRI_DN       &trans               &trans                 &trans                               &trans             &ext_gif            &em_bt             &gm_dot           &trans  
-        
-              &kp RALT        &c_h_t LALT RET    &c_h_t LCTRL TAB     &c_h_t LSFT SPACE      &c_h_t LGUI BSPC                     &c_h_t LGUI BSP    &c_h_t LSFT SPACE   &c_h_t LCTRL TAB   &c_h_t LALT RET   &kp RALT
-                        >;
-                };
-
-
-                layer_3 {
-
-display-name= "BLUETOOTH";
-                            
- bindings = <
-
- 
-              &trans          &trans            &trans                 &trans                 &trans                               &trans              &trans               &trans             &trans           &trans
-
-              &t_l_t_kp2 F11  &t_l_t_kp 0 F12   &to_layer_tap_kp 1 F13 &t_l_t_kp 3 F14        &kp F15                              &kp F16             &kp F17              &kp F18            &kp F19          &kp F20
-
-              &bt BT_CLR      &bt BT_NXT        &bt BT_PRV             &out OUT_TOG           &trans                               &bt BT_SEL 0        &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4 
-          
-              &kp RALT        &c_h_t LALT RET   &c_h_t LCTRL TAB       &c_h_t LSFT SPACE      &c_h_t LGUI BSPC                     &c_h_t LGUI BSP     &c_h_t LHFT SPACE    &c_h_t LCTRL TAB   &c_h_t LALT RET  &kp RALT
-                        >;    
-                };
+        layer_0 {
+            display-name = "HOME";
+            bindings = <
+    &kp W          &kp L            &kp R             &kp B             &kp J               &kp Z           &kp Q             &kp U            &kp D          &kp X 
+    &t_l_t_kp 2 S  &t_l_t_kp 0 H    &t_l_t_kp 1 N     &t_l_t_kp 3 T     &kp SEMI            &kp APOS        &kp A             &kp E            &kp O          &kp I 
+    &kp F          &kp M            &kp V             &kp C             &kp COMMA           &kp DOT         &kp P             &kp G            &kp K          &kp Y 
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
+            >;
         };
-};
+
+        layer_1 {
+            display-name = "NUMBER";
+            bindings = <
+    &kp N7         &kp N8           &kp N9            &kp N0            &trans              &trans          &kp LBKT          &kp RBKT         &bk_xcl        &kp F11
+    &t_l_t_kp 2 N4 &t_l_t_kp 0 N5   &t_l_t_kp 1 N6    &t_l_t_kp 3 GRAVE &trans              &trans          &kp LEFT          &kp UP           &kp DOWN       &kp RIGHT 
+    &one_pipe      &kp N2           &kp N3            &trans            &trans              &trans          &kp EQUAL         &kp MINUS        &pw_lh         &trans 
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
+            >;  
+        };
+
+        layer_2 {
+            display-name = "SYSTEM";
+            bindings = <
+    &kp PG_UP      &kp PG_DN        &trans            &trans            &trans              &trans          &kp C_MUTE        &kp C_VOL_DN     &kp C_VOL_UP   &trans   
+    &t_l_t_kp 2 F1 &t_l_t_kp 0 F2   &t_l_t_kp 1 F3    &t_l_t_kp 3 F4    &kp F5              &kp F6          &kp F7            &kp F8           &kp F9         &kp F10
+    &kp C_BRI_UP   &kp C_BRI_DN     &trans            &trans            &trans              &trans          &ext_gif          &em_bt           &gm_dot        &trans  
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
+            >;
+        };
+
+        layer_3 {
+            display-name = "BLUETOOTH";
+            bindings = <
+    &bt BT_CLR     &trans           &trans            &trans            &trans              &trans          &trans            &trans           &trans         &trans
+    &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4        &trans          &trans            &trans           &trans         &trans
+    &out OUT_BLE   &out OUT_USB     &trans            &trans            &trans              &trans          &trans            &trans           &trans         &trans  
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
+            >;
+        };
+    };
