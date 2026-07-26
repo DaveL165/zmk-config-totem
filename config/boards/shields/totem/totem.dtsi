@@ -1,4 +1,8 @@
-/#include <dt-bindings/zmk/matrix_transform.h>
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 / {
     chosen {

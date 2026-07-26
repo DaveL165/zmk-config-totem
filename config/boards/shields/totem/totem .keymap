@@ -26,25 +26,25 @@
 
         left_sys_reset {
             timeout-ms = <50>;
-            key-positions = <0 10>;
+            key-positions = <0 20>;
             bindings = <&sys_reset>;
         };
 
         left_bootloader {
             timeout-ms = <50>;
-            key-positions = <4 14>;
+            key-positions = <4 24>;
             bindings = <&bootloader>;
         };
 
         right_bootloader {
             timeout-ms = <50>;
-            key-positions = <5 15>;
+            key-positions = <5 25>;
             bindings = <&bootloader>;
         };
 
         right_sys_reset {
             timeout-ms = <50>;
-            key-positions = <9 19>;
+            key-positions = <9 29>;
             bindings = <&sys_reset>;
         };
 
