@@ -26,25 +26,25 @@
 
         left_sys_reset {
             timeout-ms = <50>;
-            key-positions = <0 20>;
+            key-positions = <0 10>;
             bindings = <&sys_reset>;
         };
 
         left_bootloader {
             timeout-ms = <50>;
-            key-positions = <4 24>;
+            key-positions = <4 14>;
             bindings = <&bootloader>;
         };
 
         right_bootloader {
             timeout-ms = <50>;
-            key-positions = <5 25>;
+            key-positions = <5 15>;
             bindings = <&bootloader>;
         };
 
         right_sys_reset {
             timeout-ms = <50>;
-            key-positions = <9 29>;
+            key-positions = <9 19>;
             bindings = <&sys_reset>;
         };
 
@@ -116,7 +116,7 @@
             wait-ms = <20>;
             tap-ms = <20>;
             bindings = <
-                &kp D &kp A &kp V &kp I &kp L &kp LEDGER &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
+                &kp D &kp A &kp V &kp I &kp D &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
                 &kp AT
                 &kp B &kp T &kp I &kp N &kp T &kp E &kp R &kp N &kp E &kp T &kp DOT &kp C &kp O &kp M>;
         };
