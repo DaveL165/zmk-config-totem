@@ -38,19 +38,19 @@
 
         right_bootloader {
             timeout-ms = <50>;
-            key-positions = <5 15>;
+            key-positions = <20 30>;
             bindings = <&bootloader>;
         };
 
         right_sys_reset {
             timeout-ms = <50>;
-            key-positions = <9 19>;
+            key-positions = <24 34>;
             bindings = <&sys_reset>;
         };
 
         right_esc {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <23 24>;
             bindings = <&kp ESC>;
         };
     };
