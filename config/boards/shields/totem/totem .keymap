@@ -18,39 +18,39 @@
     combos {
         compatible = "zmk,combos";
 
-        left_esc {
+        combo_left_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <00 01>;
             bindings = <&kp ESC>;
         };
 
-        left_sys_reset {
+        combo_left_sys_reset {
             timeout-ms = <50>;
-            key-positions = <0 10>;
+            key-positions = <00 20>;
             bindings = <&sys_reset>;
         };
 
-        left_bootloader {
+        combo_left_bootloader {
             timeout-ms = <50>;
-            key-positions = <4 14>;
+            key-positions = <04 24>;
             bindings = <&bootloader>;
         };
 
-        right_bootloader {
+        combo_right_bootloader {
             timeout-ms = <50>;
-            key-positions = <20 30>;
+            key-positions = <05 25>;
             bindings = <&bootloader>;
         };
 
-        right_sys_reset {
+        combo_right_sys_reset {
             timeout-ms = <50>;
-            key-positions = <24 34>;
+            key-positions = <09 29>;
             bindings = <&sys_reset>;
         };
 
-        right_esc {
+        combo_right_esc {
             timeout-ms = <50>;
-            key-positions = <23 24>;
+            key-positions = <08 09>;
             bindings = <&kp ESC>;
         };
     };
