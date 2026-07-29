@@ -6,9 +6,11 @@
 
 #include "totem.dtsi"
 
+/ {
+
 &default_transform {
     col-offset = <5>;
-};
+                    };
 
 &kscan0 {
     col-gpios
@@ -18,4 +20,5 @@
         , <&xiao_d 7 GPIO_ACTIVE_HIGH>
         , <&xiao_d 8 GPIO_ACTIVE_HIGH>
         ;
-};
+          };
+    };
