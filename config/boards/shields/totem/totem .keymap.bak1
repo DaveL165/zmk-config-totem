@@ -149,40 +149,40 @@
         layer_0 {
             display-name = "HOME";
             bindings = <
-    &kp W          &kp L            &kp R             &kp B             &kp J             &kp Z            &kp Q             &kp U            &kp D           &kp X 
-    &t_l_t_kp 2 S  &t_l_t_kp 0 H    &t_l_t_kp 1 N     &t_l_t_kp 3 T     &kp SEMI          &kp APOS         &kp A             &kp E            &kp O           &kp I 
-    &kp F          &kp M            &kp V             &kp C             &kp COMMA         &kp DOT          &kp P             &kp G            &kp K           &kp Y 
-    &c_h_t RALT DEL&c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL
+    &kp W          &kp L            &kp R             &kp B             &kp J               &kp Z           &kp Q             &kp U            &kp D          &kp X 
+    &t_l_t_kp 2 S  &t_l_t_kp 0 H    &t_l_t_kp 1 N     &t_l_t_kp 3 T     &kp SEMI            &kp APOS        &kp A             &kp E            &kp O          &kp I 
+    &kp F          &kp M            &kp V             &kp C             &kp COMMA           &kp DOT         &kp P             &kp G            &kp K          &kp Y 
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
             >;
         };
 
         layer_1 {
             display-name = "NUMBER";
             bindings = <
-    &kp N7         &kp N8           &kp N9            &kp N0            &trans            &trans           &kp LBKT          &kp RBKT         &bk_xcl         &kp FSLH
-    &t_l_t_kp 2 N4 &t_l_t_kp 0 N5   &t_l_t_kp 1 N6    &t_l_t_kp 3 GRAVE &trans            &trans           &kp LEFT          &kp UP           &kp DOWN        &kp RIGHT 
-    &one_pipe      &kp N2           &kp N3            &trans            &trans            &trans           &kp EQUAL         &kp MINUS        &pw_lh          &trans 
-&c_h_t RALT DEL&c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL    
+    &kp N7         &kp N8           &kp N9            &kp N0            &trans              &trans          &kp LBKT          &kp RBKT         &bk_xcl        &kp F11
+    &t_l_t_kp 2 N4 &t_l_t_kp 0 N5   &t_l_t_kp 1 N6    &t_l_t_kp 3 GRAVE &trans              &trans          &kp LEFT          &kp UP           &kp DOWN       &kp RIGHT 
+    &one_pipe      &kp N2           &kp N3            &trans            &trans              &trans          &kp EQUAL         &kp MINUS        &pw_lh         &trans 
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
             >;  
         };
 
         layer_2 {
             display-name = "SYSTEM";
             bindings = <
-    &kp PG_UP      &kp PG_DN        &trans            &trans            &trans            &trans           &kp C_MUTE        &kp C_VOL_DN     &kp C_VOL_UP    &trans   
-    &t_l_t_kp 2 F1 &t_l_t_kp 0 F2   &t_l_t_kp 1 F3    &t_l_t_kp 3 F4    &kp F5            &kp F6           &kp F7            &kp F8           &kp F9          &kp F10
-    &kp C_BRI_UP   &kp C_BRI_DN     &trans            &trans            &trans            &trans           &ext_gif          &em_bt           &gm_dot         &trans  
-&c_h_t RALT DEL&c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL    
+    &kp PG_UP      &kp PG_DN        &trans            &trans            &trans              &trans          &kp C_MUTE        &kp C_VOL_DN     &kp C_VOL_UP   &trans   
+    &t_l_t_kp 2 F1 &t_l_t_kp 0 F2   &t_l_t_kp 1 F3    &t_l_t_kp 3 F4    &kp F5              &kp F6          &kp F7            &kp F8           &kp F9         &kp F10
+    &kp C_BRI_UP   &kp C_BRI_DN     &trans            &trans            &trans              &trans          &ext_gif          &em_bt           &gm_dot        &trans  
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
             >;
         };
 
         layer_3 {
             display-name = "BLUETOOTH";
             bindings = <
-     &trans      &trans           &trans           &trans            &trans            &trans           &trans            &trans           &trans          &trans
-    &t_l_t_kp 2 F11 &t_l_t_kp 0 F12  &t_l_t_kp 1 F13  &t_l_t_kp 3 F14   &kp F15           &kp F16          &kp F17           &kp F18          &kp F19         &kp F20
-    &bt BT_CLR      &bt BT_NXT       &bt BT_PRV       &out OUT_TOG      &trans            &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4     
-&c_h_t RALT DEL&c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL   
+    &bt BT_CLR     &trans           &trans            &trans            &trans              &trans          &trans            &trans           &trans         &trans
+    &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4        &trans          &trans            &trans           &trans         &trans
+    &out OUT_BLE   &out OUT_USB     &trans            &trans            &trans              &trans          &trans            &trans           &trans         &trans  
+    &kp RALT       &c_h_t LALT RET  &c_h_t LCTRL TAB  &c_h_t LSFT SPACE &c_h_t LGUI BSPC    &c_h_t LGUI BSPC &c_h_t LSFT SPACE &c_h_t LCTRL TAB &c_h_t LALT RET &kp RALT
             >;
         };
     };
