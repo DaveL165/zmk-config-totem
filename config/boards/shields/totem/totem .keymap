@@ -169,10 +169,10 @@
         layer_2 {
             display-name = "SYSTEM";
             bindings = <
-    &kp PG_UP       &kp PG_DN        &kp C_VOL_UP      &kp C_VOL_DN      &trans             &trans            &kp C_MUTE        &kp C_NEXT       &kp C_PREV      &kp C_PP    
-    &t_l_t_kp 2 F1  &t_l_t_kp 0 F2   &t_l_t_kp 1 F3    &t_l_t_kp 3 F4    &kp F5             &kp F6            &kp F7            &kp F8           &kp F9          &kp F10
-    &kp C_BRI_UP    &kp C_BRI_DN     &trans            &trans            &trans             &trans            &ext_gif          &em_bt           &gm_dot         &trans  
-    &c_h_t RALT DEL &c_h_t LALT RET  &c_h_t LGUI TAB   &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB  &c_h_t LALT RET &c_h_t RALT DEL    
+    &kp PG_UP       &kp PG_DN        &kp C_VOL_UP      &kp C_VOL_DN      &trans              &trans            &kp C_MUTE        &kp C_NEXT       &kp C_PREV      &kp C_PP    
+    &t_l_t_kp 2 F1  &t_l_t_kp 0 F2   &t_l_t_kp 1 F3    &t_l_t_kp 3 F4    &kp F5              &kp F6            &kp F7            &kp F8           &kp F9          &kp F10
+    &kp C_BRI_UP    &kp C_BRI_DN     &trans            &trans            &trans              &trans            &ext_gif          &em_bt           &gm_dot         &trans  
+    &c_h_t RALT DEL &c_h_t LALT RET  &c_h_t LGUI TAB   &c_h_t LSFT SPACE &c_h_t LCTRL BSPC   &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB  &c_h_t LALT RET &c_h_t RALT DEL    
             >;
         };
 
