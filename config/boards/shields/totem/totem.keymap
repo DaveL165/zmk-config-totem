@@ -48,6 +48,17 @@
                 , <&macro_tap &kp G &kp I &kp F>;
         };
 
+        gm_dot: gmail_with_a_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <
+                &kp D &kp A &kp V &kp I &kp D &kp DOT &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
+                &kp AT
+                &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+        };
+
     
         ext_gif: dot: gif {
             compatible = "zmk,behavior-macro";
