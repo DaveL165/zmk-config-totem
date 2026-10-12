@@ -55,6 +55,13 @@
             bindings = <&bootloader>;
             
             };
+
+        combo_right_bootloader {
+            timeout-ms = <50>;
+            key-positions = <05 25>;
+            bindings = <&bootloader>;
+
+            };
     };
 
     macros {
