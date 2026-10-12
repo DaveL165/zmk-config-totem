@@ -57,6 +57,15 @@
                 flavor = "hold-preferred";
                 tapping-term-ms =<300>;
                 bindings = <&to>, <&kp>;
+        };
+
+        c_h_t: custom_hold_tap {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                tapping-term-ms =<170>;
+                quick-tap-ms = <100>
+                bindings = <&kp>, <&kp>;
         }
     }
 
