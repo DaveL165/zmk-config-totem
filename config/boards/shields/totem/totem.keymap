@@ -223,11 +223,11 @@ label= "NUMBER"                              ;
  bindings = <
 // ╷           ╷             ╷            ╷              ╷                    ╷      ╷  ╷          ╷          ╷          ╷           ╷           ╷
 
-                &kp N7        &kp N8       &kp N9         &kp N0               &trans   &trans    &kp LBKT   &kp RBKT   &kp BSLH   &kp FLSH 
-                &lt 2 N4      &lt 0 N5     &lt 1 N6       &lt 3 GRAVE          &trans   &trans    &kp LEFT   &kp UP     &kp DN     &kp RIGHT  
-                &kp N1        &kp N2       &kp N3         &trans               &trans   &trans    &kp EQUAL  &kp MINUS  &gif       &kp ESC            
-                &trans        &trans       &trans         &trans               &trans   &trans    &trans     &trans     &trans     &trans 
-                        >;
+                &kp N7          &kp N8           &kp N9           &kp N0              &trans            &trans           &kp LBKT         &kp RBKT         &kp BSLH          &kp FLSH 
+                &lt 2 N4        &lt 0 N5         &lt 1 N6         &lt 3 GRAVE         &trans            &trans           &kp LEFT         &kp UP           &kp DN            &kp RIGHT  
+                &kp N1          &kp N2           &kp N3           &trans              &trans            &trans           &kp EQUAL        &kp MINUS        &pw_lh            &trans            
+                &c_h_t RALT DEL &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE   &c_h_t LCTRL BSPC &c_h_t RALT DEL  &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB &c_h_t LALT RET &c_h_t RALT DEL       
+                          >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
