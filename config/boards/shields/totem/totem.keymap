@@ -60,6 +60,13 @@
             timeout-ms = <50>;
             key-positions = <05 25>;
             bindings = <&bootloader>;
+            
+            };
+
+        combo_right_sys_reset {
+            timeout-ms = <50>;
+            key-positions = <09 29>;
+            bindings = <&sys_reset>;
 
             };
     };
