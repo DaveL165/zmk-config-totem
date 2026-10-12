@@ -68,7 +68,7 @@
             key-positions = <09 29>;
             bindings = <&sys_reset>;
         
-            };
+        };
 
         combo_right_esc {
             timeout-ms = <50>;
@@ -197,11 +197,11 @@ label= "HOME"                              ;
  bindings = <
 // ╷           ╷             ╷             ╷               ╷                 ╷           ╷     ╷             ╷               ╷             ╷             ╷           ╷
 
-                &kp W          &kp L         &kp R          &kp B             &kp J             &kp Z         &kp Q           &kp U         &kp D        &kp X
-                &lt 2 S        &lt 0 H       &lt 1 N        &lt 3 T           &kp SEMI          &kp APOS      &kp A           &kp E         &kp O        &kp I  
-                &kp F          &kp M         &kp  V         &kp C             &kp COMMA         &kp DOT       &kp P           &kp G         &kp K        &kp Y
-                &sys_reset     &mt LALT RET  &mt LCTRL TAB  &mt RSHFT SPACE   &mt RGUI BSPC     &mt RGUI BSP  &mt RSHFT SPACE &mt LCTRL TAB &mt LALT RET &sys_reset 
-                        >;
+                &kp W            &kp L            &kp R            &kp B              &kp J              &kp Z              &kp Q              &kp U            &kp D            &kp X
+                &lt 2 S          &lt 0 H          &lt 1 N          &lt 3 T            &kp SEMI           &kp APOS           &kp A              &kp E            &kp O            &kp I  
+                &kp F            &kp M            &kp  V           &kp C              &kp COMMA          &kp DOT            &kp P              &kp G            &kp K            &kp Y
+                &c_h_t RALT DEL  &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE  &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC  &c_h_t LSFT SPACE  &c_h_t LGUI TAB  &c_h_t LALT RET  &c_h_t RALT DEL   
+                          >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
