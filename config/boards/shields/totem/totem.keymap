@@ -74,6 +74,14 @@
                 bindings = <&kp N1>, <&kp PIPE>;
                 keep-mods = <0>;
                 mods = <(MOD_LSFT)>;
+        };
+
+        bk_xcl: backslash_shriek {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <0>;
+                bindings = <&kp BACKSLASH>, <&kp EXCLAMATION>;
+                keep-mods = <0>;
+                mods = <(MOD_LSFT)>;
         }
     }
 
