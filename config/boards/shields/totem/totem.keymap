@@ -67,7 +67,13 @@
             timeout-ms = <50>;
             key-positions = <09 29>;
             bindings = <&sys_reset>;
+        
+            };
 
+        combo_right_esc {
+            timeout-ms = <50>;
+            key-positions = <08 09>;
+            bindings = <&kp ESC>;
             };
     };
 
