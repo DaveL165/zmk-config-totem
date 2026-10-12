@@ -50,6 +50,16 @@
         };
     };
 
+    behaviors {
+        t_l_t_kp: toggle_layer_tap_keypress {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms =<300>;
+                bindings = <&to>, <&kp>;
+        }
+    }
+
         keymap {
                 compatible = "zmk,keymap";
 
