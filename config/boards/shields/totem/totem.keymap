@@ -65,7 +65,15 @@
                 flavor = "balanced";
                 tapping-term-ms =<170>;
                 quick-tap-ms = <100>
-                bindings = <&kp>, <&kp>;
+                bindings = <&kp>, <&kp>; 
+        };
+
+        one_pipe: one_pipe {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <0>;
+                bindings = <&kp N1>, <&kp PIPE>;
+                keep-mods = <0>;
+                mods = <(MOD_LSFT)>;
         }
     }
 
