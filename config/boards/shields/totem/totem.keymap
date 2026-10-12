@@ -41,6 +41,12 @@
                 bindings = <&kp ESC>;
         
             };
+
+        combo_left_sys_reset {
+            timeout-ms = <50>;
+            key-positions = <00 20>;
+            bindings = <&sys_reset>;
+            };
     };
 
     macros {
