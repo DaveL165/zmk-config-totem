@@ -66,6 +66,17 @@
             wait-ms = <20>;
             tap-ms = <20>;
             bindings = <&kp DOT &kp G &kp I &kp F>;
+        };
+
+        em_bt: bt_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <
+                &kp D &kp A &kp V &kp I &kp D &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
+                &kp AT
+                &kp B &kp T &kp I &kp N &kp T &kp E &kp R &kp N &kp E &kp T &kp DOT &kp C &kp O &kp M>;
                 
         };
     };
