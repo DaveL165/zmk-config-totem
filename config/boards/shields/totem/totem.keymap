@@ -77,6 +77,27 @@
                 &kp D &kp A &kp V &kp I &kp D &kp L &kp E &kp D &kp G &kp E &kp R &kp W &kp O &kp O &kp D &kp N1 &kp N6 &kp N5
                 &kp AT
                 &kp B &kp T &kp I &kp N &kp T &kp E &kp R &kp N &kp E &kp T &kp DOT &kp C &kp O &kp M>;
+        };
+
+        pw_lh: password_lh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = 
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp L>,
+                <&macro_release &kp LSHFT>,
+                <&macro_tap &kp I &kp L &kp L &kp Y >,
+                <&macro_tap &kp P &kp A &kp S &kp S>,
+                <&macro_press &kp LSHFT>,
+                <&macro_press &kp N7>,
+                <&macro_release &kp LSHFT>,
+                <&macro_tap &kp N1 &kp N2 &kp N3 &kp N4>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp H>,
+                <&macro_release &kp LSHFT>,
+                <&macro_tap &kp A &kp R &kp R &kp Y>;
                 
         };
     };
