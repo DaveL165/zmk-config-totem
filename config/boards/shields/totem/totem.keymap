@@ -198,7 +198,7 @@ label= "HOME"                              ;
 // ╷           ╷             ╷             ╷               ╷                 ╷           ╷     ╷             ╷               ╷             ╷             ╷           ╷
 
                 &kp W            &kp L            &kp R            &kp B              &kp J              &kp Z              &kp Q              &kp U            &kp D            &kp X
-                &lt 2 S          &lt 0 H          &lt 1 N          &lt 3 T            &kp SEMI           &kp APOS           &kp A              &kp E            &kp O            &kp I  
+                &t_l_t_kp 2 S    &t_l_t_kp 0 H    &t_l_t_kp 1 N    &t_l_t_kp 3 T      &kp SEMI           &kp APOS           &kp A              &kp E            &kp O            &kp I  
                 &kp F            &kp M            &kp  V           &kp C              &kp COMMA          &kp DOT            &kp P              &kp G            &kp K            &kp Y
                 &c_h_t RALT DEL  &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE  &c_h_t LCTRL BSPC  &c_h_t LCTRL BSPC  &c_h_t LSFT SPACE  &c_h_t LGUI TAB  &c_h_t LALT RET  &c_h_t RALT DEL   
                           >;
