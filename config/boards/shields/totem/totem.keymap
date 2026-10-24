@@ -205,9 +205,9 @@ label= "NUMBER"                              ;
  bindings = <
 // ╷           ╷             ╷            ╷              ╷                    ╷      ╷  ╷          ╷          ╷          ╷           ╷           ╷
 
-                &kp N7          &kp N8           &kp N9           &kp N0              &trans            &trans            &kp LBKT          &kp RBKT         &bk_xcl           &kp FLSH 
-                &t_l_t_kp 2 N4  &t_l_t_kp 0 N5   &t_l_t_kp 1 N6   &t_l_t_kp 3 GRAVE   &trans            &trans            &kp LEFT          &kp UP           &kp DN            &kp RIGHT  
-                &one_pipe       &kp N2           &kp N3           &trans              &trans            &trans            &kp EQUAL         &kp MINUS        &pw_lh            &trans            
+                &kp N7          &kp N8           &kp N9           &kp N0              &kp MINUS         &kp EQUAL         &kp LBKT          &kp RBKT         &bk_xcl           &kp FLSH 
+                &t_l_t_kp 2 N4  &t_l_t_kp 0 N5   &t_l_t_kp 1 N6   &t_l_t_kp 3 GRAVE   &kp SEMI          &kp APOS          &kp LEFT          &kp UP           &kp DN            &kp RIGHT  
+                &one_pipe       &kp N2           &kp N3           &trans              &kp COMMA         &kp DOT           &trans            &trans           &trans            &pw_lh             
                 &c_h_t RALT DEL &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE   &c_h_t LCTRL BSPC &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB  &c_h_t LALT RET   &c_h_t RALT DEL       
                           >;
                 };
