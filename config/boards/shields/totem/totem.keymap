@@ -126,6 +126,30 @@
     };
 
     behaviors {
+         mm_left: mm_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&kp LEFT>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+         mm_down: mm_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&kp DOWN>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+         mm_up: mm_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&kp UP>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+         mm_right: mm_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&kp RIGHT>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
         t_l_t_kp: toggle_layer_tap_keypress {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -206,8 +230,8 @@ label= "NUMBER"                              ;
 // ╷           ╷             ╷            ╷              ╷                    ╷      ╷  ╷          ╷          ╷          ╷           ╷           ╷
 
                 &kp N7          &kp N8           &kp N9           &kp N0              &kp MINUS         &kp EQUAL         &kp LBKT          &kp RBKT         &bk_xcl           &kp FLSH 
-                &t_l_t_kp 2 N4  &t_l_t_kp 0 N5   &t_l_t_kp 1 N6   &t_l_t_kp 3 GRAVE   &kp SEMI          &kp APOS          &kp LEFT          &kp UP           &kp DN            &kp RIGHT  
-                &one_pipe       &kp N2           &kp N3           &trans              &kp COMMA         &kp DOT           &trans            &trans           &trans            &pw_lh             
+                &t_l_t_kp 2 N4  &t_l_t_kp 0 N5   &t_l_t_kp 1 N6   &t_l_t_kp 3 GRAVE   &kp SEMI          &kp APOS          &mm_left          &mm_down         &mm_up            &mm_right  
+                &one_pipe       &kp N2           &kp N3           &trans              &kp COMMA         &kp DOT           &mkp LCLK         &mkp MCLK        &mkp RCLK         &pw_lh             
                 &c_h_t RALT DEL &c_h_t LALT RET  &c_h_t LGUI TAB  &c_h_t LSFT SPACE   &c_h_t LCTRL BSPC &c_h_t LCTRL BSPC &c_h_t LSFT SPACE &c_h_t LGUI TAB  &c_h_t LALT RET   &c_h_t RALT DEL       
                           >;
                 };
